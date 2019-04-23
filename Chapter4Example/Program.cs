@@ -11,7 +11,7 @@ namespace Chapter4Example {
             Account myAccount = new Account("John Doe", 0.0m);
 
             Console.WriteLine($"Initial name is: {myAccount.Name}");
-            Console.WriteLine($"Initial balance is: {myAccount.Balance}");
+            Console.WriteLine($"Initial balance is: {myAccount.Balance:c}");
 
             // prompt for and read the name then put the name in the object
             Console.Write("Enter the name: "); // prompt
@@ -23,7 +23,7 @@ namespace Chapter4Example {
 
             // display the name stored in the myAccount object
             Console.WriteLine($"myAccount's name is: {myAccount.Name}");
-            Console.WriteLine($"myAccount's Balance is: {myAccount.Balance}");
+            Console.WriteLine($"myAccount's Balance is: {myAccount.Balance:c}");
             Console.ReadKey();
         }
     }

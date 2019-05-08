@@ -11,7 +11,7 @@ namespace Chapter4Example.Tests {
     public class AccountTests {
         
         [TestMethod()]
-        public void DepositTest() {
+        public void Deposit_DepositAmountEqualToBalance() {
             Account myAccount = new Account("test account", 0.0m);
             decimal amount = 5.05m;
             myAccount.Deposit(amount);
@@ -20,7 +20,7 @@ namespace Chapter4Example.Tests {
         }
 
         [TestMethod()]
-        public void DebitTest() {
+        public void Debit_DoesDebitDeductExpectedAmount() {
             decimal startBalance = 10.00m;
             Account myAccount = new Account("test account", startBalance);
             decimal amount = 5.00m;
